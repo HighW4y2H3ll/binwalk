@@ -27,6 +27,22 @@
 0	uleshort	0x27BD		MIPS instructions, function epilogue
 >2	ulelong	!0x03e00008	{invalid}
 
+# MIPS64 epilogue
+# jr $ra
+# daddiu $sp, XX
+#
+# daddiu $sp, XX
+# jr $ra
+0	ubelong	0x03e00008	MIPS 64 instructions, function epilogue
+>4	ubeshort	!0x67BD		{invalid}
+0	ubeshort	0x67BD		MIPS 64 instructions, function epilogue
+>2	ubelong	!0x03e00008	{invalid}
+
+0	ulelong	0x03e00008	MIPSEL 64 instructions, function epilogue
+>6	uleshort	!0x67BD		{invalid}
+0	uleshort	0x67BD		MIPSEL 64 instructions, function epilogue
+>2	ulelong	!0x03e00008	{invalid}
+
 # MIPS16e
 # nop (x4)
 # TODO: Produces false positives when scanning ARM Thumb code
