@@ -99,8 +99,8 @@
 >36     ulelong     x               edition %u,
 >40     lelong      <1              invalid blocks,{invalid}
 >40     ulelong     x               %u blocks,
->44     lelong      <1              invalid file count,{invalid}
->44     lelong      >1000000        invalid file count,{invalid}
+#>44     lelong      <1              invalid file count,{invalid}
+#>44     lelong      >1000000        invalid file count,{invalid}
 >44     ulelong     x               %u files
 >4      ulelong     x               {jump:%u}
 >4      ulelong     x               {size:%u}
@@ -117,8 +117,8 @@
 >36     belong      x               edition %u,
 >40     belong      <1              invalid blocks,{invalid}
 >40     ubelong     x               %u blocks,
->44     belong      <1              invalid file count,{invalid}
->44     belong      >1000000        invalid file count,{invalid}
+#>44     belong      <1              invalid file count,{invalid}
+#>44     belong      >1000000        invalid file count,{invalid}
 >44     ubelong     x               %u files
 >4      ubelong     x               {jump:%u}
 >4      ubelong     x               {size:%u}
