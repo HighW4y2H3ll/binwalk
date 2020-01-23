@@ -377,8 +377,8 @@
 0       string  tqsh    Squashfs filesystem, big endian, DD-WRT signature,
 >28     beshort >10     {invalid}
 >28     beshort <1      {invalid}
->30     beshort >10     {invalid}
->30     beshort <1      {invalid}
+#>30     beshort >10     {invalid}
+#>30     beshort <1      {invalid}
 >28     beshort x       version %d.
 >30     beshort x       \b%d,
 >28     beshort >3      compression:
